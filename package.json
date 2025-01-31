@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Nodes.js assignment for BharatFD",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "node app.js",
+    "start": "node index.js",
     "test": "mocha test/**/*.test.js"
   },
   "author": "Ujjawal Rana",
