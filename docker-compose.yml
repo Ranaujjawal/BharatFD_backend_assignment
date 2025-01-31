@@ -1,0 +1,17 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: Faq_app
+    ports:
+      - "3000:3000"  
+    env_file:
+      - .env 
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge
+
